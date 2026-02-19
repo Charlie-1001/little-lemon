@@ -1,0 +1,104 @@
+.features {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 3%;
+}
+
+.headline button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--primary-color2);
+  color: var(--primary-color4);
+  transition: all 0.3s ease;
+}
+
+.headline button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color1);
+  color: var(--secondary-color4);
+  transform: scale(1.05);
+}
+
+.specials {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3%;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.cards {
+  height:32rem;
+  width: 20rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary-color3);
+}
+
+.cards img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+.cardHeader h3 {
+  color: var(--secondary-color4);
+}
+
+.cardHeader span {
+  color: var(--secondary-color1);
+}
+
+.cards p {
+  height: 10rem;
+  padding: 0.7rem;
+  color: var(--secondary-color4);
+}
+
+.cardFooter {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 1.3rem 0.7rem;
+  gap: 0.7rem;
+}
+
+.cardFooter button {
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.cardFooter button:hover {
+  color: var(--secondary-color1);
+  cursor: pointer;
+}
+
+.cardFooter span {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .specials {
+    margin: 0 15%;
+  }
+
+  .headline {
+    margin: 4rem 15%;
+  }
+}

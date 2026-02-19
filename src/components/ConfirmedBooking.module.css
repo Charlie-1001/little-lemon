@@ -1,0 +1,78 @@
+.confirmedBookingSection {
+  height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color1);
+}
+
+.receipt {
+  height: 50%;
+  aspect-ratio: 1 / 1.41;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondary-color3);
+  box-shadow: 3px 3px 5px rgb(32, 32, 32);
+  padding: 0.7rem;
+  position: relative;
+}
+
+.logo {
+  height: 8%;
+}
+
+.receipt h1 {
+  text-align: center;
+  background-color: var(--primary-color1);
+  color: var(--secondary-color3);
+}
+
+.receipt p {
+  text-indent: 2rem;
+}
+
+.receipt ul {
+  width: 80%;
+  list-style: none;
+  border-bottom: 1px dashed black;
+  margin: 0 auto;
+}
+
+.receipt li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3rem 0;
+}
+
+.receipt span {
+  font-weight: bold;
+}
+
+.leaves {
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  }
+
+.leavesLeft {
+  transform: translate(-50%, -20%) scaleX(-1);
+  }
+
+.leavesRight {
+  right: 0;
+  transform: translate(50%, -20%);
+}
+
+@media screen and (min-width: 1024px) {
+  .receipt {
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .receipt {
+    height: 90%;
+  }
+}

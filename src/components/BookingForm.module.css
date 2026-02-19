@@ -1,0 +1,95 @@
+.bookingSection {
+  height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  background-color: var(--primary-color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookingContainer {
+  position: relative;
+  width: 80%;
+  height: 45%;
+  background-color: var(--secondary-color3);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 5% 10%;
+}
+
+.bookingContainer h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookingForm input,
+.bookingForm select {
+  padding: 0.3rem 0.7rem;
+  text-align: center;
+  width: 50%;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  width: 100%;
+  padding-left: 50%;
+}
+
+.submitBtn {
+  width: fit-content;
+  padding: 0.7rem 1.3rem;
+  margin: 1.3rem auto;
+  background-color: var(--primary-color1);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  transform: scale(1.1);
+}
+
+.submitBtn:disabled {
+  background-color: rgb(128, 126, 126);
+  cursor: not-allowed;
+}
+
+.lemonUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12rem;
+  transform: translate(-30%, -30%);
+}
+
+.lemonDown {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12rem;
+  transform: translate(30%, 30%);
+}
+
+@media screen and (min-width: 1024px) {
+  .bookingContainer {
+    height: 80%;
+    width: 50%;
+    padding: 1% 5%;
+  }
+}

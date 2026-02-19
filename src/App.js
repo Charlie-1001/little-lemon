@@ -1,11 +1,19 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Navigation from './components/Navigation';
+import Main from './Main';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to Little Lemon</h1>
-    </div>
-  );
+    <BrowserRouter>
+      <Navigation />
+      <main>
+        <Main />
+      </main>
+      <Footer />
+    </BrowserRouter>
+  )
 }
 
 export default App;
